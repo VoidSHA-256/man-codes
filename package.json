@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "scrape": "node scrape.js"
+    "scrape": "node scrape.js",
+    "bot": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.7",
     "node-telegram-bot-api": "^0.66.0",
     "papaparse": "^5.5.2",
     "playwright": "^1.51.0"

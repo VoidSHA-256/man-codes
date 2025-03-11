@@ -1,8 +1,9 @@
 const TelegramBot = require("node-telegram-bot-api");
 const fs = require("fs");
 const csv = require("csv-parser");
+require("dotenv").config();
 
-const BOT_TOKEN = "7206419874:AAHUw2zUKKh4oyeMlWzKQFiz82xvPxbcrqE";
+const BOT_TOKEN = process.env.BOT_TOKEN;
 const bot = new TelegramBot(BOT_TOKEN, { polling: true });
 let errorData = [];
 
