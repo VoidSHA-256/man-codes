@@ -17,6 +17,8 @@
     "scrapeAsTronicLite": "node scrapeAsTronicLite.js",
     "scrapeAsTronicMid": "node scrapeAsTronicMid.js",
     "scrapeZfEcoLife": "node scrapeZfEcoLife.js",
+    "scrapeVoithDiwa": "node scrapeVoithDiwa.js",
+    "scrapeStoneridgeBaselineHighline": "node scrapeStoneridgeBaselineHighline.js",
     "bot": "node index.js"
   },
   "author": "",
