@@ -7,6 +7,8 @@
     "scrapeEdc7CommonRail": "node scrapeEdc7CommonRail.js",
     "scrapeEdc": "node scrapeEdc.js",
     "scrapeFfr": "node scrapeFfr.js",
+    "scrapePtm": "node scrapePtm.js",
+    "scrapeZbr": "node scrapeZbr.js",
     "bot": "node index.js"
   },
   "author": "",
