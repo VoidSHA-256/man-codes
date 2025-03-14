@@ -9,6 +9,10 @@
     "scrapeFfr": "node scrapeFfr.js",
     "scrapePtm": "node scrapePtm.js",
     "scrapeZbr": "node scrapeZbr.js",
+    "scrapeEcas": "node scrapeEcas.js",
+    "scrapeEbs2Wabco": "node scrapeEbs2Wabco.js",
+    "scrapeEbs2Knorr": "node scrapeEbs2Knorr.js",
+    "scrapeEbs5Knorr": "node scrapeEbs5Knorr.js",
     "bot": "node index.js"
   },
   "author": "",
