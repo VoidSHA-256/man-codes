@@ -19,9 +19,12 @@
     "scrapeZfEcoLife": "node scrapeZfEcoLife.js",
     "scrapeVoithDiwa": "node scrapeVoithDiwa.js",
     "scrapeStoneridgeBaselineHighline": "node scrapeStoneridgeBaselineHighline.js",
+    "scrapeRasEc": "node scrapeRasEc.js",
+    "scrapeAcElektro": "node scrapeAcElektro.js",
+    "scrapeAc": "node scrapeAc.js",
     "bot": "node index.js"
   },
-  "author": "",
+  "author": "V",
   "license": "ISC",
   "description": "",
   "dependencies": {
