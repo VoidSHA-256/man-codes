@@ -13,6 +13,8 @@
     "scrapeEbs2Wabco": "node scrapeEbs2Wabco.js",
     "scrapeEbs2Knorr": "node scrapeEbs2Knorr.js",
     "scrapeEbs5Knorr": "node scrapeEbs5Knorr.js",
+    "scrapeScr": "node scrapeScr.js",
+    "scrapeAsTronicLite": "node scrapeAsTronicLite.js",
     "bot": "node index.js"
   },
   "author": "",
