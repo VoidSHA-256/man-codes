@@ -22,6 +22,8 @@
     "scrapeRasEc": "node scrapeRasEc.js",
     "scrapeAcElektro": "node scrapeAcElektro.js",
     "scrapeAc": "node scrapeAc.js",
+    "scrapeDoorTga": "node scrapeDoorTga.js",
+    "scrapeDoorTgx": "node scrapeDoorTgx.js",
     "bot": "node index.js"
   },
   "author": "V",
