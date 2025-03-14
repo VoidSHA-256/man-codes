@@ -5,6 +5,8 @@
   "scripts": {
     "scrapeEdc17": "node scrapeEdc17.js",
     "scrapeEdc7CommonRail": "node scrapeEdc7CommonRail.js",
+    "scrapeEdc": "node scrapeEdc.js",
+    "scrapeFfr": "node scrapeFfr.js",
     "bot": "node index.js"
   },
   "author": "",
