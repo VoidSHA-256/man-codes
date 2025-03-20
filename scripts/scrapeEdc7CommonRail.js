@@ -1,16 +1,16 @@
-const { chromium } = require("playwright");
-const fs = require("fs");
-const Papa = require("papaparse");
+const { chromium } = require('playwright');
+const fs = require('fs');
+const Papa = require('papaparse');
 
 async function scrapePage(page) {
   return await page.$$eval('td[class="style98"] table tbody tr', (rows) => {
     const result = [];
     for (let i = 6; i < rows.length; i++) {
-      if (rows[i].querySelectorAll("td").length !== 3) {
+      if (rows[i].querySelectorAll('td').length !== 3) {
         continue;
       }
       const row = rows[i];
-      const tds = row.querySelectorAll("td");
+      const tds = row.querySelectorAll('td');
       result.push({
         code: tds[0]?.innerText,
         description: tds[1]?.innerText,
@@ -23,20 +23,20 @@ async function scrapePage(page) {
 }
 
 (async () => {
-  const browser = await chromium.connectOverCDP("http://localhost:9222");
+  const browser = await chromium.connectOverCDP('http://localhost:9222');
   const context = browser.contexts()[0];
   const page = await context.newPage();
 
-  await page.goto("https://kodtruck.ru/man%20edc%207%20CR.htm");
+  await page.goto('https://kodtruck.ru/man%20edc%207%20CR.htm');
 
-  const edc7Links = await page.$$eval("a", (links) =>
+  const edc7Links = await page.$$eval('a', (links) =>
     links
       .map((link) => ({
         text: link.innerText.trim(),
         href: link.href,
       }))
       .filter(
-        (link) => link.text.startsWith("EDC7") || link.href.includes("EDC7")
+        (link) => link.text.startsWith('EDC7') || link.href.includes('EDC7')
       )
   );
 
@@ -44,7 +44,7 @@ async function scrapePage(page) {
 
   for (edc7Link of edc7Links) {
     await page.goto(edc7Link.href);
-    await page.waitForSelector("table");
+    await page.waitForSelector('table');
 
     const rows = await scrapePage(page);
 
@@ -53,9 +53,9 @@ async function scrapePage(page) {
 
   const csvData = Papa.unparse(result);
 
-  fs.writeFileSync("edc7CommonRail.csv", csvData, "utf8");
+  fs.writeFileSync('../data/edc7CommonRail.csv', csvData, 'utf8');
 
-  console.log("Rows:", result.length);
+  console.log('Rows:', result.length);
 
   await browser.close();
 })();
