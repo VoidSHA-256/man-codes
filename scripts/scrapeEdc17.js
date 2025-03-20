@@ -56,7 +56,7 @@ async function scrapePage(page) {
 
   const csvData = Papa.unparse(result);
 
-  fs.writeFileSync('../data/edc17.csv', csvData, 'utf8');
+  fs.writeFileSync('data/edc17.csv', csvData, 'utf8');
 
   console.log('Rows:', result.length);
 

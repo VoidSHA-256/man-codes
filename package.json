@@ -24,6 +24,10 @@
     "scrapeAc": "node scripts/scrapeAc.js",
     "scrapeDoorTga": "node scripts/scrapeDoorTga.js",
     "scrapeDoorTgx": "node scripts/scrapeDoorTgx.js",
+    "runPart1": "node scripts/scrapeEdc17.js && node scripts/scrapeEdc7CommonRail.js && node scripts/scrapeEdc.js && node scripts/scrapeFfr.js && node scripts/scrapePtm.js",
+    "runPart2": "node scripts/scrapeZbr.js && node scripts/scrapeEcas.js && node scripts/scrapeEbs2Wabco.js && node scripts/scrapeEbs2Knorr.js && node scripts/scrapeEbs5Knorr.js",
+    "runPart3": "node scripts/scrapeScr.js && node scripts/scrapeAsTronicLite.js && node scripts/scrapeAsTronicMid.js && node scripts/scrapeZfEcoLife.js && node scripts/scrapeVoithDiwa.js",
+    "runPart4": "node scripts/scrapeStoneridgeBaselineHighline.js && node scripts/scrapeRasEc.js && node scripts/scrapeAcElektro.js && node scripts/scrapeAc.js && node scripts/scrapeDoorTga.js && node scripts/scrapeDoorTgx.js",
     "bot": "node index.js"
   },
   "author": "V",

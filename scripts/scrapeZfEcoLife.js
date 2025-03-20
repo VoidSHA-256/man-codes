@@ -39,7 +39,7 @@ async function scrapePage(page) {
 
   const csvData = Papa.unparse(result);
 
-  fs.writeFileSync('../data/zfEcoLife.csv', csvData, 'utf8');
+  fs.writeFileSync('data/zfEcoLife.csv', csvData, 'utf8');
 
   console.log('Rows:', result.length);
 

@@ -38,7 +38,7 @@ async function scrapePage(page) {
 
   const csvData = Papa.unparse(result);
 
-  fs.writeFileSync('../data/asTronicMid.csv', csvData, 'utf8');
+  fs.writeFileSync('data/asTronicMid.csv', csvData, 'utf8');
 
   console.log('Rows:', result.length);
 
